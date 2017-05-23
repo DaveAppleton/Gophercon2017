@@ -58,7 +58,7 @@ Current state = sum of previous transactions
 
 "Young man, in mathematics you don't understand things. You just get used to them."
 
-John von Neumann.
+.caption John von Neumann.
 
 * Digital Signatures
 - I am going to assume that you understand hashing
@@ -136,6 +136,7 @@ If a transaction fails *ALL* changes are reversed and *NO* logs produced.
 * Let's make up a problem...
 
 .image smart_meter.jpg
+.caption can't think what inspired this...
 
 * Building A Contract
 
@@ -157,15 +158,17 @@ kinda familar - let's see the core data structure
 
 .code PowerTokenPresent.sol  /start xfer OMIT/,/end xfer OMIT/
 
+What are MustBeTech & MustBeTeller ?
+
 * Must be Teller??
 
 .image teller.jpg
 
-.code PowerTokenPresent.sol  /start mod OMIT/,/end mod OMIT/
-
+.caption Don't blame me, Sau Sheong wanted a joke
 
 * Modifiers & events
 
+.code PowerTokenPresent.sol  /start mod OMIT/,/end mod OMIT/
 
 Events put data into the log (along with the recorded transaction) and can be detected by event handlers in wallets etc.
 
