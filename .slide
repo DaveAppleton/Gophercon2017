@@ -181,7 +181,7 @@ Modifiers are an easy way to add a prefix to a function for code reuse.
 
 Events put data into the log (along with the recorded transaction) and can be detected by event handlers in wallets etc.
 
-   event ErrorEvent(string message, address meter, address user, uint256 last, uint256 current);
+   event purchase(address user, uint16 level, uint256 value, uint256 tokens);
 
 .image events.png 300 1000
 
