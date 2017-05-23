@@ -161,20 +161,29 @@ kinda familar - let's see the core data structure
 What are MustBeTech & MustBeTeller ?
 
 * Must be Teller??
-
+ 
+ 
+ 
+ 
 .image teller.jpg
 
 .caption Don't blame me, Sau Sheong wanted a joke
 
-* Modifiers & events
-
-.code PowerTokenPresent.sol  /start mod OMIT/,/end mod OMIT/
-
-Events put data into the log (along with the recorded transaction) and can be detected by event handlers in wallets etc.
+* Modifiers
 
 Modifiers are an easy way to add a prefix to a function for code reuse.
 
 "throw" causes the transaction to be terminated and changes rolled back.
+
+.code PowerTokenPresent.sol  /start mod OMIT/,/end mod OMIT/
+
+* Events
+
+Events put data into the log (along with the recorded transaction) and can be detected by event handlers in wallets etc.
+
+   event ErrorEvent(string message, address meter, address user, uint256 last, uint256 current);
+
+.image events.png 300 1000
 
 * Updating the readings
 
@@ -209,11 +218,11 @@ Abigen builds a complete interface for talking to the contract. e.g.
 
 * using etherscan
 
-.image etherscan.png
+.image etherscan.png 500 800
 
 * record of transactions
 
-.image txlist.png 
+.image txlist.png 500 800
 
 * So, what have we achieved?
 
